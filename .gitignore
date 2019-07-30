@@ -1,0 +1,10 @@
+gradle/
+out/
+.git/
+.gradle/
+.idea
+build.gradle
+gradlew.bat
+HELP.md
+kafka_camel.iml
+settings.gradle
