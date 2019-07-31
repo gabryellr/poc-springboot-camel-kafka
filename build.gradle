@@ -1,0 +1,21 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.gabryelrock.poc'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.camel', name: 'camel-kafka', version: '2.24.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.apache.camel:camel-spring-boot-starter:2.24.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

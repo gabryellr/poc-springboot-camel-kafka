@@ -8,7 +8,7 @@ public class Message extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("kafka://localhost:9092?topic=test&brokers=localhost:9092")
-                .to("log:foo");
+        from("kafka:test?brokers=localhost:9092")
+                .log("Message received from Kafka : ${body}");
     }
 }
