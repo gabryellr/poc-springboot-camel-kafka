@@ -27,4 +27,4 @@
 6. Start the application typing it on the terminal
 `gradle bootRun`
 
-7. Back to the terminal where the **step 4** was done and send some messages again, now on the terminal where the application was started **(step 6)** you'll see the messages printed
+7. Back to the terminal where the **step 4** was done and send some messages again like "apple", "orange" or "limon", now on the terminal where the application was started **(step 6)** you'll see what predicate and processor was actived, for example, when you sent apple, Apple predicate will process the message and print something. :)
