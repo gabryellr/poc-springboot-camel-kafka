@@ -32,7 +32,6 @@ public class FruitsRoute {
         @Override
         public void configure() {
             from("kafka:test?brokers=localhost:9092")
-                    //.log("Message received from Kafka : ${body}");
                     .choice()
                         .when(orangePredicate)
                             .process(orangeProcessor)
