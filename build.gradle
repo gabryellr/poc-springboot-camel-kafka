@@ -15,7 +15,5 @@ repositories {
 
 dependencies {
     compile group: 'org.apache.camel', name: 'camel-kafka', version: '2.24.0'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.apache.camel:camel-spring-boot-starter:2.24.0'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile group: 'org.apache.camel', name: 'camel-spring-boot-starter', version: '2.24.0'
 }
